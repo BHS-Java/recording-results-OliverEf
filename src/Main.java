@@ -10,8 +10,10 @@ public class Main implements Spec{
         System.out.println("Hello " + newPlayer.getName());
         newPlayer.getHeight();
         newPlayer.getAge();
+        System.out.println("-----------------");
         System.out.println("You are " + newPlayer.name + " " + newPlayer.height + "cm tall and " + newPlayer.age + " years old.");
-
+        System.out.println("-----------------");
+        
     }
 
     
