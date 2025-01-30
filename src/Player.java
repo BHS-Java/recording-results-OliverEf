@@ -1,31 +1,33 @@
 public class Player implements Person{
-    
+    Main main = new Main();
+    String name;
+    int height;
+    int age;
     public Player() {
-
+        
     }
 
     @Override
     public void setName(String name) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setName'");
+        this.name = main.askString("What is your name?");
     }
 
     @Override
     public String getName() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getName'");
+        return name;
     }
 
     @Override
     public int getHeight() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getHeight'");
+        this.height = main.askNumber("What is your height?");
+        return height;
+        
     }
 
     @Override
     public int getAge() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getAge'");
+        this.age = main.askNumber("What is your age?");
+        return age;
     }
 
     @Override

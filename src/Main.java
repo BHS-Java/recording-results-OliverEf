@@ -1,20 +1,37 @@
-
+import java.util.Scanner;
 
 public class Main implements Spec{
+
+    public final Scanner USER = new Scanner(System.in);
+
     public static void main(String[] args) {
+        Player newPlayer = new Player();
+        newPlayer.setName("What is your name?");
+        System.out.println("Hello " + newPlayer.getName());
+        newPlayer.getHeight();
+        newPlayer.getAge();
+        System.out.println("You are " + newPlayer.name + " " + newPlayer.height + "cm tall and " + newPlayer.age + " years old.");
+
+    }
+
+    
+    public String askString(String question) {
+        
+        System.out.println(question);
+        String answer = USER.nextLine();
+        
+        System.out.println("You entered: " + answer);
+        return answer;
         
     }
 
     @Override
-    public String askString(String question) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'askString'");
-    }
-
-    @Override
     public int askNumber(String question) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'askNumber'");
+        System.out.println(question);
+        int answer = USER.nextInt();
+        
+        System.out.println("You entered: " + answer);
+        return answer;
     }
 
     @Override
