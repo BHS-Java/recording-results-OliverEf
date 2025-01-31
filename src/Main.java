@@ -1,8 +1,13 @@
 import java.util.Scanner;
 
+
+
 public class Main implements Spec{
 
+    //Properties
     public final Scanner USER = new Scanner(System.in);
+
+    //Constructors
 
     public static void main(String[] args) {
         Player newPlayer = new Player();
@@ -16,7 +21,7 @@ public class Main implements Spec{
         
     }
 
-    
+    //Methods
     public String askString(String question) {
         
         System.out.println(question);

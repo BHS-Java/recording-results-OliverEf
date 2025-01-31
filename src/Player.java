@@ -1,12 +1,18 @@
 public class Player implements Person{
+
+    //Properties
+
     Main main = new Main();
     String name;
     int height;
     int age;
+
+    //Constructors
     public Player() {
         
     }
 
+    //Methods
     @Override
     public void setName(String name) {
         this.name = main.askString("What is your name?");
