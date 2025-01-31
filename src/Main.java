@@ -10,6 +10,11 @@ public class Main implements Spec{
     //Constructors
 
     public static void main(String[] args) {
+        Game game = new Game();
+    }
+
+    //Methods
+    public Player createPlayer() {
         Player newPlayer = new Player();
         newPlayer.setName("What is your name?");
         System.out.println("Hello " + newPlayer.getName());
@@ -18,10 +23,9 @@ public class Main implements Spec{
         System.out.println("-----------------");
         System.out.println("You are " + newPlayer.name + " " + newPlayer.height + "cm tall and " + newPlayer.age + " years old.");
         System.out.println("-----------------");
-        
+        return newPlayer;
     }
 
-    //Methods
     public String askString(String question) {
         
         System.out.println(question);
