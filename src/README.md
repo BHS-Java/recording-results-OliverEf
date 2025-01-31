@@ -5,4 +5,4 @@
 * You will also need to use the other interfaces included in this project, without modification.
 
 If you cannot get to working code in class, you will need to do so for homework.
-Do not seek outside assistance.
+Do not seek outside assistance
